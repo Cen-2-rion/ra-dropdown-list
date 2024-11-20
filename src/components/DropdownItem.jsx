@@ -1,14 +1,25 @@
-const DropdownItem = () => {
+const DropdownItem = [
+    {
+        id: 1,
+        title: 'Profile Information'
+    },
+    {
+        id: 2,
+        title: 'Change Password'
+    },
+    {
+        id: 3,
+        title: 'Become PRO'
+    },
+    {
+        id: 4,
+        title: 'Help'
+    },
+    {
+        id: 5,
+        title: 'Log Out'
+    }
+  ];
 
-    return (
-        <ul className="dropdown-items">
-            <li><a href="#">Profile Information</a></li>
-            <li><a href="#">Change Password</a></li>
-            <li><a href="#">Become PRO</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Log Out</a></li>
-        </ul>
-    );
-}
+  export default DropdownItem;
 
-export default DropdownItem;

@@ -7,11 +7,11 @@ const Dropdown = () => {
     const toggleDropdown = () => setIsOpen(!isOpen);
 
     return (
-        <div className="dropdown-wrapper">
-            <button className="dropdown-button" onClick={toggleDropdown}>
+        <div className='dropdown-wrapper'>
+            <button className='dropdown-button' onClick={toggleDropdown}>
                 Account settings
             </button>
-            {isOpen && <DropdownList />}
+            {isOpen && <DropdownList/>}
         </div>
     );
 }

@@ -1,23 +1,23 @@
 import {useState} from 'react';
 import DropdownItem from './DropdownItem';
 
-const DropdownList = ({items}) => {
+const DropdownList = () => {
     const [selected, setSelected] = useState(null);
-    
-    const handleClick = (item) => {
-        setSelected(selected === item ? 'active' : '');
-    }
 
-    items = [
-        {label: 'Option 1', value: 'option1'}
-    ];
+    const handleClick = (item) => {
+        setSelected(item);
+    }
     
     return (
-        <>
-            {items.map(item => (
-                <DropdownItem key={item} item={item} onClick={() => handleClick(item)} />
+        <ul className='dropdown-items'>
+            {DropdownItem.map(item => (
+                <li key={item.id} className={selected === item.id ? 'item active' : 'item'}>
+                    <a href='#' onClick={() => handleClick(item.id)}>
+                        {item.title}
+                    </a>
+                </li>
             ))}
-        </>
+        </ul>
     );
 }
 
