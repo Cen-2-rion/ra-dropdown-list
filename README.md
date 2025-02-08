@@ -1,3 +1,7 @@
+# Домашнее задание к занятию "2.3. Выпадающий список"
+[![Netology React](https://github.com/Cen-2-rion/ra-dropdown-list/actions/workflows/web.yml/badge.svg?branch=main)](https://github.com/Cen-2-rion/ra-dropdown-list/actions/workflows/web.yml)
+## Ссылка на Github Pages
+https://cen-2-rion.github.io/ra-dropdown-list/
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
